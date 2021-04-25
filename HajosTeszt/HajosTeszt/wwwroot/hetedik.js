@@ -35,6 +35,19 @@ function kérdésMegjelenítés(kérdés) {
     válasz3.innerText = kérdések[kérdés].answer3
 }
 
+function kérdésBetöltés(id) {
+    fetch(`/questions/${id}`)
+        .then(response => {
+            if (!response.ok) {
+                console.error(`Hibás válasz: ${response.status}`)
+            }
+            else {
+                return response.json()
+            }
+        })
+        .then(data => kérdésMegjelenítés(data));
+}    
+
 window.onload = () => {
 
     letöltés();
