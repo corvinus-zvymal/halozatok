@@ -41,6 +41,10 @@
     padding: 20px;
     width: 80px;
 }
+.kattintható:hover {
+    background-color: lightgreen;
+    color: white;
+}
 
 .kerdes {
     background-color: yellow;

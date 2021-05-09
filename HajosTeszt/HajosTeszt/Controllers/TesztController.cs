@@ -17,7 +17,7 @@ namespace HajosTeszt.Controllers
         {
             return new ContentResult
             {
-                ContentType = System.Net.Mime.MediaTypeNames.Text.Plain, //"text/plain"
+                ContentType = System.Net.Mime.MediaTypeNames.Text.Plain,
                 Content = szoveg.ToUpper()
         };
         }
